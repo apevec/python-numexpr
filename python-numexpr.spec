@@ -1,4 +1,6 @@
+%if 0%{?fedora}
 %global with_python3 1
+%endif
 
 %{?filter_setup:
 %filter_provides_in %{python_sitearch}/.*\.so$
